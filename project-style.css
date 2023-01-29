@@ -72,7 +72,7 @@ a:hover{
 font-size: 30px;
 color: white;
 float: right;
-line-height: 80px;
+line-height: 64px;
 margin-right: 40px;
 cursor: pointer;
 display: none;
@@ -93,11 +93,13 @@ font-size: 16px;
 @media (max-width: 858px){
 .checkbtn{
 display: block;
+
+height: fit-content;
 }
 ul{
 position: fixed;
 width: 100%;
-height: 100vh;
+height: 100%;
 background: #0F2C2F ;
 top: 60px;
 left: -100%;
@@ -121,10 +123,14 @@ left: 0;
 
 }
 
+
+
 .together-container{
     flex-direction: column;
     
 }
+
+
 
 .for-img{
     width: 0;
@@ -212,7 +218,7 @@ left: 0;
         ul{
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background: #0F2C2F ;
         top: 60px;
         left: -100%;
@@ -318,7 +324,7 @@ left: 0;
 width: 100%;
 height:91vh;
 overflow: hidden;
-background-image: url("images/newBacksize.jpg");
+background-image: url("images/parent3.jpg");
 background-attachment: fixed;
 background-repeat: no-repeat;
 background-size: cover;
@@ -329,11 +335,25 @@ color: #10c6c6;
 }
 
 .for-p{
-width: 500px;
-height: 50vh;
-padding-left: 90px;
-margin-top: 30px;
-margin-top: 30px;
+width: 100%;
+
+
+
+
+}
+
+.forp-together{
+
+    max-width: fit-content;
+    margin: auto;
+    padding: 70px 0;
+
+}
+
+.imgTogether{
+    width: fit-content;
+
+    margin: auto;
 }
 
 .for-p h1{
@@ -373,10 +393,12 @@ font-size: 35px;
 margin-top: 40px;
 gap: 30px;
 display: flex;
+
 }
 
 .socialBtn a{
     color: #10c6c6;
+    transition: 0.3s;
 
 }
 
@@ -386,24 +408,24 @@ display: flex;
 
 }
 .for-img{
-width: 500px;
-height: 60vh;
+width: 100%;
+
 
 }
 
 .for-img img{
 max-width: 100%;
 height: 500px;
-margin-top: 20px;
+
 }
 
 .together-container{
 display: flex;
-margin-left:90px; 
-margin-right:90px; 
-gap: 130px;
+width: 100%;
+
 
 margin-top: 30px;
+height: fit-content;
 }
 
 
@@ -542,6 +564,7 @@ z-index: 2;
     width: 100%;
     height: fit-content;
     margin-top: 50px;
+
 
 
     
