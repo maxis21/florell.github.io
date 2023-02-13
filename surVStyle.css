@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --dark-color: #000;
+}
+
+body {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(#000);
+    overflow: hidden;
+    perspective: 1000px;
+  }
+
+.night {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    filter: blur(0.1vmin);
+    background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 233, 255, 0.2)), repeating-linear-gradient(220deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), linear-gradient(90deg, rgb(0, 255, 250), rgb(240, 240, 240));
+  }
+
+
+.qsContain{
+    width: 100;
+    margin-top: 50px;
+    height: fit-content;
+}
+
+.qsContain img{
+    max-width: 100%;
+    max-height: 300px;
+
+}
+
+.aCon{
+    width: fit-content;
+
+    margin: auto;
+}
+
+.ans{
+    width: 100%;
+   
+    
+    margin-top: 30px;
+
+}
+
+.ansCon{
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+.btnAboutMe{
+    color: black;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 6em;
+    height: 3em;
+    transition: 0.4s;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    border-color: white;
+
+}
+
+.btnAboutMe:hover{
+    background-color: rgb(252, 89, 89);
+    border: none;
+}
+
+.btnAboutMe:active{
+    background-color: rgb(139, 46, 34);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 858px){
+    .ans{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .btnAboutMe{
+        margin: auto;
+    }
+
+    .ansCon{
+        flex-direction: column;
+    }
+}
